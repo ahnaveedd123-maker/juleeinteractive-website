@@ -4,81 +4,167 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Keyro Invoicing – quotes, signatures and invoices for tradies</title>
-<meta name="description" content="Keyro Invoicing: quote on site, get it signed online, invoice in one tap. Built for Australian and New Zealand tradies.">
+<meta name="description" content="Keyro Invoicing: quote on site, get it signed online, invoice in one tap. Built for Australian and New Zealand tradies. On the App Store, Google Play and the web.">
+<meta name="apple-itunes-app" content="app-id=6838989698">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Keyro Invoicing – quoting and invoicing for tradies">
+<meta property="og:description" content="Quote on site, get it signed online and invoice in one tap. 30-day free trial.">
+<meta property="og:url" content="https://juleeinteractive.com.au/keyro/">
+<meta property="og:image" content="https://juleeinteractive.com.au/keyro/img/keyro-share.jpg">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="data:image/svg+xml,<svg width='40' height='40' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'><rect x='2' y='2' width='96' height='96' rx='22' fill='%230B2545' stroke='rgba(255,255,255,.35)' stroke-width='3'/><path transform='translate(19.75 68) scale(0.07143 -0.07143)' fill='%23fff' d='M57 0V700H289V446L519 700H776L496 392L790 0H517L342 232L289 173V0Z'/><rect x='33.5' y='74' width='33' height='5' rx='2.5' fill='%23F25708'/></svg>">
 <style>
 *{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
 body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:#1F2937;background:#F4F6FA;line-height:1.65}
 a{color:#1D4ED8}
 header{background:#0B2545;color:#fff}
-.bar{max-width:880px;margin:0 auto;padding:16px 20px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.bar{max-width:1040px;margin:0 auto;padding:16px 20px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
 .brand{display:flex;align-items:center;gap:12px;color:#fff;text-decoration:none;margin-right:auto}
 .brand b{font-size:19px;letter-spacing:2px}
 .brand small{display:block;font-size:11px;letter-spacing:3px;color:#FBBF45;font-weight:700}
 nav a{color:#CBD5E1;text-decoration:none;font-size:14px;font-weight:600;margin-left:14px}
-nav a[aria-current]{color:#fff;border-bottom:2px solid #F25708;padding-bottom:2px}
-main{max-width:880px;margin:0 auto;padding:36px 20px 56px}
-.card{background:#fff;border:1px solid #DCE3EC;border-radius:18px;padding:34px 34px 26px}
-h1{font-size:32px;line-height:1.2;color:#0B2545;margin:0 0 6px}
-.meta{color:#5E6A71;font-size:14px;margin:0 0 26px}
-h2{font-size:19px;color:#0B2545;margin:30px 0 8px}
-h3{font-size:16px;color:#0B2545;margin:20px 0 4px}
-p,li{font-size:16px}
-ul,ol{padding-left:22px}
-.box{background:#FFF7ED;border:1px solid #FBD5B5;border-radius:14px;padding:16px 18px;margin:18px 0}
-.btn{display:inline-block;background:#FBBF45;color:#0B2545;font-weight:800;text-decoration:none;padding:12px 20px;border-radius:12px;margin:6px 0}
-.steps li{margin-bottom:6px}
-footer{text-align:center;color:#5E6A71;font-size:13px;padding:0 20px 40px}
+h2{font-size:28px;line-height:1.25;color:#0B2545;margin:0 0 10px}
+h3{font-size:18px;color:#0B2545;margin:0 0 6px}
+.btn{display:inline-block;background:#FBBF45;color:#0B2545;font-weight:800;text-decoration:none;padding:13px 22px;border-radius:12px}
+footer{text-align:center;color:#5E6A71;font-size:13px;padding:10px 20px 40px}
 footer a{color:#5E6A71}
-@media(max-width:600px){.card{padding:24px 20px}h1{font-size:26px}nav a{margin:0 14px 0 0}nav{width:100%}}
 
-.hero{background:#0B2545;color:#fff;padding:56px 20px 64px;text-align:center}
+.hero{background:#0B2545;color:#fff;padding:52px 20px 60px;text-align:center}
 .hero .k{width:84px;height:84px}
-.hero h1{color:#fff;font-size:44px;margin:18px 0 10px;letter-spacing:-1px}
+.hero h1{color:#fff;font-size:46px;line-height:1.12;margin:18px 0 12px;letter-spacing:-1px}
 .hero h1 span{color:#F25708}
 .hero p{color:#CBD5E1;font-size:18px;max-width:620px;margin:0 auto 26px}
-.hero .btn{font-size:17px;padding:14px 26px}
-.hero .note{font-size:14px;color:#94A3B8;margin-top:14px}
-.wrap{max-width:1000px;margin:0 auto;padding:48px 20px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
-.f{background:#fff;border:1px solid #DCE3EC;border-radius:16px;padding:20px 22px}
-.f h3{margin:0 0 6px;font-size:18px}
-.f p{margin:0;color:#4A5D78;font-size:15px}
-.shots{display:flex;gap:16px;overflow-x:auto;padding:4px 2px 12px;scroll-snap-type:x mandatory}
-.shots{justify-content:center}.shots img{border-radius:22px;flex:none;width:224px;height:auto;scroll-snap-align:start;box-shadow:0 10px 30px rgba(11,37,69,.25)}
+.hero .note{font-size:14px;color:#94A3B8;margin:18px auto 0}
+.hero .note a{color:#FBBF45;font-weight:700}
+
+.stores{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.sbtn{display:inline-flex;align-items:center;gap:10px;background:#000;color:#fff;text-decoration:none;border:1.5px solid #A6A6A6;border-radius:12px;padding:9px 18px 9px 14px;min-width:190px;text-align:left}
+.sbtn svg{flex:none}
+.sbtn small{display:block;font-size:11px;line-height:1.2;letter-spacing:.2px;color:#E5E7EB}
+.sbtn b{display:block;font-size:20px;line-height:1.15;font-weight:600;letter-spacing:-.2px}
+.sbtn:hover{border-color:#fff}
+.sbtn.mine{box-shadow:0 0 0 3px #FBBF45}
+
+.wrap{max-width:1040px;margin:0 auto;padding:56px 20px}
 .center{text-align:center}
-.cta{background:#fff;border:1px solid #DCE3EC;border-radius:18px;padding:30px;text-align:center}
-@media(max-width:960px){.shots{justify-content:flex-start}}@media(max-width:600px){.hero h1{font-size:32px}}
+.lead{color:#4A5D78;font-size:17px;max-width:640px;margin:0 auto 30px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.f{background:#fff;border:1px solid #DCE3EC;border-radius:16px;padding:22px}
+.f .ic{width:38px;height:38px;border-radius:10px;background:#FFF1E8;color:#F25708;display:flex;align-items:center;justify-content:center;font-size:19px;margin-bottom:10px}
+.f p{margin:0;color:#4A5D78;font-size:15px}
+
+.showcase{background:#fff;border-top:1px solid #DCE3EC;border-bottom:1px solid #DCE3EC;padding:56px 0}
+.shots{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;max-width:1000px;margin:0 auto;padding:0 20px}
+.shots img{width:100%;height:auto;border-radius:20px;display:block;box-shadow:0 14px 36px rgba(11,37,69,.28)}
+
+.price{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;max-width:820px;margin:0 auto}
+.p{background:#fff;border:1px solid #DCE3EC;border-radius:18px;padding:26px 24px;text-align:center}
+.p.best{border:2px solid #F25708;position:relative}
+.p.best:before{content:"Best value";position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:#F25708;color:#fff;font-size:12px;font-weight:800;letter-spacing:.5px;padding:3px 12px;border-radius:20px}
+.p .amt{font-size:34px;font-weight:800;color:#0B2545;line-height:1.1;margin:6px 0 2px}
+.p .amt small{font-size:15px;font-weight:600;color:#5E6A71}
+.p p{margin:6px 0 0;color:#4A5D78;font-size:14px}
+
+.faq{max-width:760px;margin:0 auto}
+details{background:#fff;border:1px solid #DCE3EC;border-radius:14px;padding:14px 18px;margin-bottom:10px}
+summary{font-weight:700;color:#0B2545;cursor:pointer}
+details p{margin:10px 0 2px;color:#4A5D78}
+
+.cta{background:#fff;border:1px solid #DCE3EC;border-radius:20px;padding:36px 24px;text-align:center}
+.cta .stores{margin:18px 0 12px}
+
+@media(max-width:800px){
+  .shots{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 20px 14px;gap:14px}
+  .shots img{flex:none;width:62vw;max-width:260px;scroll-snap-align:center}
+}
+@media(max-width:600px){nav .hm{display:none}.hero h1{font-size:34px}nav a{margin:0 14px 0 0}nav{width:100%}h2{font-size:24px}.wrap{padding:44px 20px}}
 </style>
 </head>
 <body>
 <header><div class="bar">
 <a class="brand" href="/keyro/"><svg width="40" height="40" viewBox="0 0 100 100" aria-hidden="true"><rect x="2" y="2" width="96" height="96" rx="22" fill="#0B2545" stroke="rgba(255,255,255,.35)" stroke-width="3"/><path transform="translate(19.75 68) scale(0.07143 -0.07143)" fill="#fff" d="M57 0V700H289V446L519 700H776L496 392L790 0H517L342 232L289 173V0Z"/><rect x="33.5" y="74" width="33" height="5" rx="2.5" fill="#F25708"/></svg><span><b>KEYRO</b><small>INVOICING</small></span></a>
-<nav><a href="/keyro/support/">Support</a><a href="/keyro/privacy/">Privacy</a><a href="/keyro/terms/">Terms</a><a href="/keyro/delete-account/">Delete account</a></nav>
+<nav><a href="#pricing">Pricing</a><a href="/keyro/support/">Support</a><a class="hm" href="/keyro/privacy/">Privacy</a><a class="hm" href="/keyro/terms/">Terms</a><a class="hm" href="/keyro/delete-account/">Delete account</a></nav>
 </div></header>
+
 <section class="hero">
 <svg class="k" width="84" height="84" viewBox="0 0 100 100" aria-hidden="true"><rect x="2" y="2" width="96" height="96" rx="22" fill="#0B2545" stroke="rgba(255,255,255,.35)" stroke-width="3"/><path transform="translate(19.75 68) scale(0.07143 -0.07143)" fill="#fff" d="M57 0V700H289V446L519 700H776L496 392L790 0H517L342 232L289 173V0Z"/><rect x="33.5" y="74" width="33" height="5" rx="2.5" fill="#F25708"/></svg>
-<h1>Australian tradies<br><span>use Keyro.</span></h1>
-<p>Quote on site, get it signed online and invoice in one tap. Simple quoting and invoicing for tradies in Australia and New Zealand.</p>
-<a class="btn" href="https://keyro.juleeinteractive.com.au">Try Keyro free</a>
-<p class="note">30-day free trial · no card needed · works on iPhone, Android and computer<br><a href="/keyro/get/" style="color:#CBD5E1">Coming soon to the App Store and Google Play</a></p>
+<h1>Your whole business,<br><span>in your pocket.</span></h1>
+<p>Quote on site, get it signed on the spot and invoice in one tap. Simple quoting, scheduling and invoicing for tradies in Australia and New Zealand.</p>
+<div class="stores">
+<a class="sbtn" id="ios" href="https://apps.apple.com/au/app/id6838989698"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M10.5 18.5h3"/></svg><span><small>Download on the</small><b>App Store</b></span></a>
+<a class="sbtn" id="android" href="https://play.google.com/store/apps/details?id=com.juleeinteractive.keyro"><svg width="26" height="26" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M5 3.2v17.6c0 .5.5.8 1 .6l15-8.8c.4-.3.4-.9 0-1.2L6 2.6c-.5-.2-1 .1-1 .6z"/></svg><span><small>Get it on</small><b>Google Play</b></span></a>
+</div>
+<p class="note">30-day free trial · no card needed<br>On a computer? <a href="https://keyro.juleeinteractive.com.au">Use Keyro in your browser</a></p>
 </section>
+
 <div class="wrap">
-<h2 class="center" style="font-size:28px;margin-top:0">Quote. Sign. Invoice. Get paid.</h2>
-<div class="grid"><div class="f"><h3>Quote on site</h3><p>Build a professional quote on your phone in minutes, with your logo, line items, GST and deposit.</p></div><div class="f"><h3>Client signs online</h3><p>Your client opens a secure link, reviews the quote and signs it with their finger. No printing, no scanning.</p></div><div class="f"><h3>Invoice in one tap</h3><p>Turn a signed quote into a tax invoice, a deposit or a progress claim, and Keyro keeps track of what is still owing.</p></div><div class="f"><h3>Reminders sent for you</h3><p>Overdue invoices show up on your Home screen. Send a polite reminder by email, SMS or WhatsApp in one tap.</p></div><div class="f"><h3>GST & BAS sorted</h3><p>See GST collected for each quarter (or NZ GST period) and download a statement to give your bookkeeper.</p></div><div class="f"><h3>Built for AU & NZ</h3><p>Australian ABN and BAS, New Zealand NZBN and GST periods. Works on iPhone, Android and computer, even offline.</p></div></div>
+<h2 class="center">Quote. Sign. Schedule. Invoice. Get paid.</h2>
+<p class="lead center">Everything a small trade business needs, without the paperwork or the office.</p>
+<div class="grid">
+<div class="f"><div class="ic">✎</div><h3>Quote on site</h3><p>Build a professional quote on your phone in minutes, with your logo, line items, GST and deposit.</p></div>
+<div class="f"><div class="ic">✍</div><h3>Signed on the spot</h3><p>Your client opens a secure link, reviews the quote and signs with their finger. Extra work goes in as a variation, so the signed quote never changes.</p></div>
+<div class="f"><div class="ic">📅</div><h3>Every job booked</h3><p>Schedule site visits, add them to your calendar and send the client an SMS confirmation in one tap.</p></div>
+<div class="f"><div class="ic">%</div><h3>Progress claims done right</h3><p>Turn a signed quote into a deposit, progress claim or final tax invoice. Keyro tracks what's been claimed and what's left, to the cent.</p></div>
+<div class="f"><div class="ic">$</div><h3>Get paid faster</h3><p>Overdue invoices are flagged on your Home screen. Send a polite reminder by email, SMS or WhatsApp in one tap.</p></div>
+<div class="f"><div class="ic">≡</div><h3>BAS-ready GST totals</h3><p>See sales and GST collected for each quarter (or NZ GST period) and download a statement for your bookkeeper.</p></div>
 </div>
+</div>
+
+<section class="showcase">
+<h2 class="center">See it in action</h2>
+<p class="lead center">Built for the ute, not the office.</p>
+<div class="shots">
+<img src="/keyro/img/keyro-home.jpg" alt="Keyro Home screen: quotes, jobs and money owed at a glance" width="560" height="1218" loading="lazy">
+<img src="/keyro/img/keyro-quote.jpg" alt="A quote with variations, progress claims and invoicing" width="560" height="1218" loading="lazy">
+<img src="/keyro/img/keyro-schedule.jpg" alt="Job schedule with calendar sync and SMS confirmations" width="560" height="1218" loading="lazy">
+<img src="/keyro/img/keyro-progress-claim.jpg" alt="A progress claim invoice with contract progress" width="560" height="1218" loading="lazy">
+<img src="/keyro/img/keyro-gst-bas.jpg" alt="Quarterly BAS statement with GST collected" width="560" height="1218" loading="lazy">
+<img src="/keyro/img/keyro-get-paid.jpg" alt="Overdue invoices flagged with one-tap reminders" width="560" height="1218" loading="lazy">
+</div>
+</section>
+
+<div class="wrap" id="pricing">
+<h2 class="center">Simple pricing</h2>
+<p class="lead center">Try everything free for 30 days. No card needed to start.</p>
+<div class="price">
+<div class="p"><h3>Monthly</h3><div class="amt">A$9.99<small> / month</small></div><p>Cancel any time.</p></div>
+<div class="p best"><h3>Yearly</h3><div class="amt">A$99.99<small> / year</small></div><p>Save 16% compared with paying monthly.</p></div>
+</div>
+<p class="center" style="font-size:13px;color:#5E6A71;margin-top:14px">Prices shown in Australian dollars. In the App Store and Google Play, prices are shown in your local currency.</p>
+</div>
+
 <div class="wrap" style="padding-top:0">
-<div class="shots"><img src="/keyro/img/quote.jpg" alt="Quote on site" width="270" height="480" loading="lazy"><img src="/keyro/img/sign.jpg" alt="Client signs online" width="270" height="480" loading="lazy"><img src="/keyro/img/invoice.jpg" alt="Invoice in one tap" width="270" height="480" loading="lazy"><img src="/keyro/img/bas.jpg" alt="GST and BAS sorted" width="270" height="480" loading="lazy"></div>
+<h2 class="center">Questions</h2>
+<div class="faq">
+<details><summary>Do I need a credit card for the free trial?</summary><p>No. Create an account and use Keyro free for 30 days. You only subscribe if you want to keep going.</p></details>
+<details><summary>Does it work in New Zealand?</summary><p>Yes. Keyro supports Australian ABN and BAS quarters, and New Zealand NZBN and GST periods.</p></details>
+<details><summary>Can I use it on my phone and my computer?</summary><p>Yes. Use the iPhone or Android app on site, and sign in at <a href="https://keyro.juleeinteractive.com.au">keyro.juleeinteractive.com.au</a> on your computer.</p></details>
+<details><summary>How do I cancel?</summary><p>If you subscribed in the App Store or Google Play, cancel in your phone's subscription settings. If you subscribed on the web, use the manage link in your subscription receipt email. Need help? <a href="/keyro/support/">Visit Support</a>.</p></details>
 </div>
+</div>
+
 <div class="wrap" style="padding-top:0">
 <div class="cta">
-<h2 style="margin-top:0">Ready to ditch the paperwork?</h2>
-<p>Create your account in under a minute and send your first quote today.</p>
-<a class="btn" href="https://keyro.juleeinteractive.com.au">Get started</a>
-<p style="font-size:14px;color:#5E6A71;margin-bottom:0">Questions? <a href="/keyro/support/">Visit Support</a> or email <a href="mailto:adminkeyro@juleeinteractive.com.au">adminkeyro@juleeinteractive.com.au</a></p>
+<h2>Ready to ditch the paperwork?</h2>
+<p style="color:#4A5D78;margin:0">Create your account in under a minute and send your first quote today.</p>
+<div class="stores">
+<a class="sbtn" href="https://apps.apple.com/au/app/id6838989698"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M10.5 18.5h3"/></svg><span><small>Download on the</small><b>App Store</b></span></a>
+<a class="sbtn" href="https://play.google.com/store/apps/details?id=com.juleeinteractive.keyro"><svg width="26" height="26" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M5 3.2v17.6c0 .5.5.8 1 .6l15-8.8c.4-.3.4-.9 0-1.2L6 2.6c-.5-.2-1 .1-1 .6z"/></svg><span><small>Get it on</small><b>Google Play</b></span></a>
+</div>
+<a class="btn" href="https://keyro.juleeinteractive.com.au">Or start in your browser</a>
+<p style="font-size:14px;color:#5E6A71;margin:16px 0 0">Questions? <a href="/keyro/support/">Visit Support</a> or email <a href="mailto:adminkeyro@juleeinteractive.com.au">adminkeyro@juleeinteractive.com.au</a></p>
 </div>
 </div>
-<footer>Keyro Invoicing is made by Julee Interactive Pty Ltd · <a href="/">juleeinteractive.com.au</a> · <a href="/keyro/privacy/">Privacy</a> · <a href="/keyro/terms/">Terms</a></footer>
+
+<footer>Keyro Invoicing is made by Julee Interactive Pty Ltd · ABN 12 703 936 832 · <a href="/">juleeinteractive.com.au</a> · <a href="/keyro/privacy/">Privacy</a> · <a href="/keyro/terms/">Terms</a> · <a href="/keyro/delete-account/">Delete account</a></footer>
+<script>
+(function(){
+  var ua = navigator.userAgent || '';
+  var isIOS = /iPhone|iPad|iPod/.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  var el = isIOS ? document.getElementById('ios') : (/Android/.test(ua) ? document.getElementById('android') : null);
+  if (el) { el.classList.add('mine'); el.parentNode.insertBefore(el, el.parentNode.firstChild); }
+})();
+</script>
 </body>
 </html>
